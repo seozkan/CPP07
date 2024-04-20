@@ -13,7 +13,7 @@
 #include <Array.hpp>
 #include <Array.tpp>
 
-#define MAX_VAL 100
+#define MAX_VAL 750
 int main(int, char**)
 {
     Array<int> numbers(MAX_VAL);

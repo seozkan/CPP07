@@ -14,19 +14,13 @@
 
 #include <iostream>
 
-template <typename T>
-void iter(const T array[], size_t len, void func(const T &))
+template<typename T> void	iter(const T *array, int size, void function(const T &))
 {
-	size_t i = 0;
-	while (i < len)
-	{
-		func(array[i]);
-		i++;
-	}
+	for (int i = 0; i < size; i++)
+		function(array[i]);
 }
 
-template <typename T>
-void printData(const T &data)
+template<typename T> void	printData(const T &data)
 {
 	std::cout << data << " ";
 }

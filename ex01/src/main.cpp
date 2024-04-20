@@ -19,12 +19,12 @@ int	main( void )
 	float	floatArray[3] = {42.42, 69.69, 42.69};
 
 	std::cout << "Result of iter the int array:" << std::endl;
-	::iter<int>(intArray, 5, ::printData);
+	iter<int>(intArray, 5, printData);
 
 	std::cout << std::endl << std::endl << "Result of iter the string array" << std::endl;
-	::iter<std::string>(stringArray, 5, ::printData);
+	iter<std::string>(stringArray, 5, printData);
 
 	std::cout<< std::endl << std::endl << "Result of iter the float array" << std::endl;
-	::iter<float>(floatArray, 3, ::printData);
+	iter<float>(floatArray, 3, printData);
 	std::cout << std::endl;
 }
